@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>토익 공부 진도표_유빈</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <div class="page">
+  <h1>🎀 토익 공부 진도표</h1>
+
+  <div class="section-title">💯 전체 진도 현황</div>
+
+  <section class="cards">
+    <article class="card blue">
+      <div class="card-head">
+        <div class="head-left">
+          <div class="pill">RC</div>
+          <div class="label">토익 RC 전체 진도율</div>
+        </div>
+        <div class="big-emoji">📋</div>
+      </div>
+      <div class="percent" id="rcPercent">0.0%</div>
+      <div class="hearts-10" id="rcHearts"></div>
+      <div class="done" id="rcDone">0 / 10 완료</div>
+    </article>
+
+    <article class="card green">
+      <div class="card-head">
+        <div class="head-left">
+          <div class="pill">LC</div>
+          <div class="label">토익 LC 전체 진도율</div>
+        </div>
+        <div class="big-emoji">🎧</div>
+      </div>
+      <div class="percent" id="lcPercent">0.0%</div>
+      <div class="hearts-10" id="lcHearts"></div>
+      <div class="done" id="lcDone">0 / 14 완료</div>
+    </article>
+
+    <article class="card purple">
+      <div class="card-head">
+        <div class="head-left">
+          <div class="pill">ALL</div>
+          <div class="label">전체 진도율</div>
+        </div>
+        <div class="big-emoji">🏆</div>
+      </div>
+      <div class="percent" id="allPercent">0.0%</div>
+      <div class="hearts-10" id="allHearts"></div>
+      <div class="done" id="allDone">0 / 24 완료</div>
+    </article>
+  </section>
+
+  <div class="tabs">
+    <button class="tab blue" onclick="showSection('rc')">💙 RC</button>
+    <button class="tab green" onclick="showSection('lc')">🩷 LC</button>
+  </div>
+
+  <div id="rcSection">
+    <table class="rc-table">
+      <thead>
+        <tr>
+          <th style="width:18%">Study</th>
+          <th style="width:12%">문제풀기</th>
+          <th style="width:10%">채점</th>
+          <th style="width:12%">오답정리</th>
+          <th style="width:10%">진도율</th>
+          <th style="width:18%" class="table-heart-title rc-heart-title">💙 💙 💙 💙 💙</th>
+        </tr>
+      </thead>
+      <tbody id="rcBody"></tbody>
+    </table>
+  </div>
+
+  <div id="lcSection" style="display:none;">
+    <table class="lc-table">
+      <thead>
+        <tr>
+          <th style="width:18%">Study</th>
+          <th style="width:12%">문제풀기</th>
+          <th style="width:10%">채점</th>
+          <th style="width:12%">오답정리</th>
+          <th style="width:10%">진도율</th>
+          <th style="width:18%" class="table-heart-title lc-heart-title">🩷 🩷 🩷 🩷 🩷</th>
+        </tr>
+      </thead>
+      <tbody id="lcBody"></tbody>
+    </table>
+  </div>
+</div>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
