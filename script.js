@@ -1,12 +1,29 @@
 const rcCount = 10;
-const lcCount = 14;
 
-function makeRows(prefix, count){
+const lcNames = [
+  "Part 9~10",
+  "Part 11~12",
+  "Part 13~14",
+  "Part 15~16",
+  "LC Test 1",
+  "LC Test 2",
+  "LC Test 3",
+  "LC Test 4",
+  "LC Test 5",
+  "LC Test 6",
+  "LC Test 7",
+  "LC Test 8",
+  "LC Test 9",
+  "LC Test 10"
+];
+
+function makeRows(prefix, items){
   const rows = [];
-  for(let i=1;i<=count;i++){
+
+  items.forEach(name => {
     rows.push(`
       <tr class="data-row" data-group="${prefix}">
-        <td>${prefix} Test ${i}</td>
+        <td>${name}</td>
         <td><input class="check part-check" type="checkbox"></td>
         <td><input class="check part-check" type="checkbox"></td>
         <td><input class="check part-check" type="checkbox"></td>
@@ -14,7 +31,7 @@ function makeRows(prefix, count){
         <td class="row-hearts"></td>
       </tr>
     `);
-  }
+  });
 
   rows.push(`
     <tr class="avg-row" data-group="${prefix}">
@@ -27,8 +44,10 @@ function makeRows(prefix, count){
   return rows.join("");
 }
 
-document.getElementById("rcBody").innerHTML = makeRows("RC", rcCount);
-document.getElementById("lcBody").innerHTML = makeRows("LC", lcCount);
+const rcNames = Array.from({ length: rcCount }, (_, i) => `RC Test ${i + 1}`);
+
+document.getElementById("rcBody").innerHTML = makeRows("RC", rcNames);
+document.getElementById("lcBody").innerHTML = makeRows("LC", lcNames);
 
 function heartsHtml(percent, totalHearts, filledHeart, emptyHeart, filledClass, emptyClass = "heart-empty"){
   const filled = Math.round((percent / 100) * totalHearts);
