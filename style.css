@@ -9,9 +9,9 @@
   --blue-soft:#eef6ff;
   --blue-line:#63a4ff;
 
-  --green:#22a06b;
-  --green-soft:#f0fbf5;
-  --green-line:#24af74;
+  --pink:#ff5c93;
+  --pink-soft:#fff0f6;
+  --pink-line:#ff8db3;
 
   --purple:#8f74eb;
   --purple-soft:#faf6ff;
@@ -72,7 +72,7 @@ h1{
 }
 
 .card.green{
-  border-color:var(--green-line);
+  border-color:var(--pink-line);
 }
 
 .card.purple{
@@ -111,8 +111,8 @@ h1{
 }
 
 .green .pill{
-  background:#dff5e7;
-  color:var(--green);
+  background:#ffe3ee;
+  color:var(--pink);
 }
 
 .purple .pill{
@@ -148,7 +148,7 @@ h1{
 }
 
 .green .percent{
-  color:var(--green);
+  color:var(--pink);
 }
 
 .purple .percent{
@@ -196,9 +196,9 @@ h1{
 }
 
 .tab.green{
-  border-color:#b9e2ce;
-  color:var(--green);
-  background:var(--green-soft);
+  border-color:var(--pink-line);
+  color:var(--pink);
+  background:var(--pink-soft);
 }
 
 table{
@@ -276,7 +276,7 @@ tbody tr:last-child td{
 }
 
 .lc-heart-title{
-  color:#7bb45a;
+  color:#ff6fa3;
 }
 
 .heart-empty{
@@ -288,7 +288,7 @@ tbody tr:last-child td{
 }
 
 .heart-green{
-  color:#7bb45a;
+  color:#ff6fa3;
 }
 
 .heart-purple{
