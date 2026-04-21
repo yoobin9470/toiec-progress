@@ -162,9 +162,13 @@ h1{
 .hearts-10{
   font-size:14px;
   line-height:1;
-  letter-spacing:1px;
+  letter-spacing:0;
   margin:2px 0 6px;
   white-space:nowrap;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:2px;
 }
 
 .done{
@@ -216,6 +220,7 @@ th, td{
   padding:7px;
   border-bottom:1px solid #ece8e3;
   font-size:12px;
+  vertical-align:middle;
 }
 
 th{
@@ -279,7 +284,7 @@ tbody tr:last-child td{
 
 .table-heart-title{
   text-align:center;
-  letter-spacing:1px;
+  letter-spacing:0;
   font-size:12px;
 }
 
@@ -305,6 +310,38 @@ tbody tr:last-child td{
 
 .heart-purple{
   color:#ff5fa2;
+}
+
+/* 하트 열만 가운데 */
+.rc-table th:last-child,
+.rc-table td:last-child,
+.lc-table th:last-child,
+.lc-table td:last-child{
+  text-align:center;
+}
+
+/* 진도율 열도 보기 좋게 가운데 */
+.rc-table th:nth-child(5),
+.rc-table td:nth-child(5),
+.lc-table th:nth-child(5),
+.lc-table td:nth-child(5){
+  text-align:center;
+}
+
+/* 체크박스 열 가운데 */
+.rc-table th:nth-child(2),
+.rc-table th:nth-child(3),
+.rc-table th:nth-child(4),
+.rc-table td:nth-child(2),
+.rc-table td:nth-child(3),
+.rc-table td:nth-child(4),
+.lc-table th:nth-child(2),
+.lc-table th:nth-child(3),
+.lc-table th:nth-child(4),
+.lc-table td:nth-child(2),
+.lc-table td:nth-child(3),
+.lc-table td:nth-child(4){
+  text-align:center;
 }
 
 @media (max-width:900px){
