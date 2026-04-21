@@ -27,10 +27,6 @@ body{
   background:var(--bg);
   color:var(--text);
   font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;
-
-  transform:scale(0.68);
-  transform-origin:top left;
-  width:147%;
 }
 
 .page{
